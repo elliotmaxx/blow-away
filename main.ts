@@ -3,7 +3,7 @@ let row = 0
 basic.showIcon(IconNames.Ghost)
 basic.forever(function () {
     for (let index = 0; index < 4; index++) {
-        if (input.soundLevel() > 128) {
+        if (input.soundLevel() < 100 && input.soundLevel() < 200) {
             row = randint(0, 4)
             col = randint(0, 4)
         }
